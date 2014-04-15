@@ -3,6 +3,7 @@
 # This method also allows fallback to 401 (u/p) auth for users who need to access the origin directly.
 # For production deployments, we recommend the use of https://www.varnish-cache.org/vmod/authentication
 # However, this should suffice for a simple development environment
+# (Based on http://blog.tenya.me/blog/2011/12/14/varnish-http-authentication/)
 
 sub vcl_recv {
 	# Authentication is done with the X-SS-Auth header
