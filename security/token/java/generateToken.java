@@ -46,9 +46,9 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        String secret = "<PSK>";
-        String path = "/clip.mp4?stime=1322079229&etime=1322089229&ip=12.34.56.789"; /* this token will be bound to an ip address */
-        String expected = "/clip.mp4?stime=1322079229&etime=1322089229&ip=12.34.56.789&encoded=023c7d5577cc5df01da68";
+        String secret = "aMSyStRoHpHVMflazeGefCofoKoRvDcalsdfkjEuRkbNDhOoekekuFNaMWaYrnprhfm";
+        String path = "/path/to/resource?sessionid=12345&misc=abcde&stime=20081201060100&etime=20201201060100";
+        String expected = "/path/to/resource?sessionid=12345&misc=abcde&stime=20081201060100&etime=20201201060100&encoded=051e88c0261c6a4d83dbc";
 
         String tokenized = makeUrlWithToken(path, secret);
 
