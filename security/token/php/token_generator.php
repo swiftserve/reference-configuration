@@ -36,9 +36,9 @@
            include 'path/to/token_generator.php';
          */
         $g = 0;
-        $key = "There's no place like home!";
-        $uri = "/path/to/resource?sessionid=12345&misc=abcde&stime=1&etime=9000000000";
-        $expected_outcome = "/path/to/resource?sessionid=12345&misc=abcde&stime=1&etime=9000000000&encoded=0760514fbdf916646f69b";
+        $key = "aMSyStRoHpHVMflazeGefCofoKoRvDcalsdfkjEuRkbNDhOoekekuFNaMWaYrnprhfm";
+        $uri = "/path/to/resource?sessionid=12345&misc=abcde&stime=20081201060100&etime=20201201060100";
+        $expected_outcome = "/path/to/resource?sessionid=12345&misc=abcde&stime=20081201060100&etime=20201201060100&encoded=051e88c0261c6a4d83dbc";
         $uri_plus_token = construct_url_with_token($uri, $g, $key);
 
         /* you don't need this - this is to verify the code produces the 
