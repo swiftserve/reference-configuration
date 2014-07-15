@@ -42,6 +42,7 @@ def generate_token(resource, secret_key):
     sha1sum of the secret key and the URL
     """
     hmac_builder = hmac.new(secret_key, resource, hashlib.sha1)
+    print hmac_builder.hexdigest()
     return "0%s" % (hmac_builder.hexdigest()[:20])
 
 def sign_url(url, secret):
